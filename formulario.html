@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h3>Informacion del usuario</h3>
+  <form action="">
+    <div>
+      <label name="name">Nombre del cliente:</label>
+      <input type="text" required placeholder="escriba su nombre" min="3" maxlength="20" pattern="[a-z A-Z]+">
+      <label name="cedula">identificacion:</label>
+      <input type="number" required>
+    </div><br>
+    <div>
+      <label name="tipo">Tipo de Identificaicon</label>
+      <select name="tipo" id="identificacion" required>
+        <option value="1">TI</option>
+        <option value="2" selected>CC</option>
+        <option value="3">CE</option>
+      </select>
+      <label name="">Tipo de Solicitante</label>
+      <select name="nombre" id="Tipo de solicitante" required>
+        <option value="1">01-Aprendiz</option>
+        <option value="2">02-Acudiente</option>
+        <option value="3" selected>03-Docente</option>
+      </select>
+    </div><br>
+    <div>
+      <label name="correo">E-mail:</label>
+      <input type="email" required>
+    </div>
+
+    <h3>Informacion de Contacto</h3>
+    <div>
+      <label name="pais">Pais:</label>
+      <input type="text" required pattern="[a-z Z-A]+" placeholder="escriba su pais de origen">
+      <label name="departamente">Departamento:</label>
+      <input type="text" required pattern="[a-z Z-A]+" placeholder="escriba su departamento">
+    </div><br>
+    <div>
+      <label nome="ciudad">Ciudad: </label>
+      <input type="text" required pattern="[a-z Z-A]+" placeholder="escriba su ciudad">
+    </div>
+    <button>enviar</button>
+  </form>
+</body>
+
+</html>
