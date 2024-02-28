@@ -38,48 +38,48 @@
     <h3>Informacion de Contacto</h3>
     <div>
       <label name="pais">Pais:</label>
-      <input type="text" required pattern="[a-z Z-A]+" placeholder="escriba su pais de origen">
-      <label name="departamente">Departamento:</label>
-      <input type="text" required pattern="[a-z Z-A]+" placeholder="escriba su departamento">
+      <input type="text" required placeholder="escriba su pais de origen">
+      <label name="departamente" pattern="[a-z Z-A]+">Departamento:</label>
+      <input type="text" pattern="[a-z A-Z]+" placeholder="escriba su departamento" required>
     </div><br>
     <div>
       <label nome="ciudad">Ciudad: </label>
-      <input type="text" required pattern="[a-z Z-A]+" placeholder="escriba su ciudad">
+      <input type="text" placeholder="escriba su ciudad" pattern="[a-z A-Z]+" required>
     </div><br>
     <div>
       <label name="telefono">Telefono</label>
-      <input type="tel">
+      <input type="tel" required name="telefono" id="telefono">
       <label name="celular">Celular</label>
-      <input type="tel">
+      <input type="tel" name="celular" id="celular" required>
     </div><br>
     <div>
       <label name="contacto">Medio de Contacto preferido:</label>
       <select name="contacto" id="preferido">
         <option value="">seleccione su preferencia</option>
-        <option value="1">correo escrito</option>
+        <option value="1" selected>correo escrito</option>
         <option value="2">correo electronico</option>
         <option value="3">mensaje de whasat</option>
       </select>
       <label name="direccion">Direccion</label>
-      <input type="text" placeholder="escriba su direccion de residencia">
+      <input type="text" placeholder="escriba su direccion de residencia" required>
     </div>
     <h3>Informacion de solicitud</h3>
     <div>
       <label name="fecha">Fecha de vencimiento</label>
-      <input type="date">
+      <input type="date" required>
     </div><br>
     <div>
       <label asunto="asunto">asunto</label>
-      <input type="text" placeholder="escriba el nombre del asunto">
+      <input type="text" placeholder="escriba el nombre del asunto" required>
     </div>
     <div>
       <label name="descripcion">Descripcion</label>
       <textarea name="descripcion" id="" cols="30" rows="10" minlength="20" maxlength="500"
-        placeholder="escriba su queja o peticin"></textarea>
+        placeholder="escriba su queja o peticin" required></textarea>
     </div>
     <div>
       <label name="imagen">Adjunto:</label>
-      <input type="file" accept=".png .jpg" multiple>
+      <input type="file" accept=".png .jpg" multiple required>
     </div>
     <button>enviar</button>
   </form>
