@@ -45,6 +45,41 @@
     <div>
       <label nome="ciudad">Ciudad: </label>
       <input type="text" required pattern="[a-z Z-A]+" placeholder="escriba su ciudad">
+    </div><br>
+    <div>
+      <label name="telefono">Telefono</label>
+      <input type="tel">
+      <label name="celular">Celular</label>
+      <input type="tel">
+    </div><br>
+    <div>
+      <label name="contacto">Medio de Contacto preferido:</label>
+      <select name="contacto" id="preferido">
+        <option value="">seleccione su preferencia</option>
+        <option value="1">correo escrito</option>
+        <option value="2">correo electronico</option>
+        <option value="3">mensaje de whasat</option>
+      </select>
+      <label name="direccion">Direccion</label>
+      <input type="text" placeholder="escriba su direccion de residencia">
+    </div>
+    <h3>Informacion de solicitud</h3>
+    <div>
+      <label name="fecha">Fecha de vencimiento</label>
+      <input type="date">
+    </div><br>
+    <div>
+      <label asunto="asunto">asunto</label>
+      <input type="text" placeholder="escriba el nombre del asunto">
+    </div>
+    <div>
+      <label name="descripcion">Descripcion</label>
+      <textarea name="descripcion" id="" cols="30" rows="10" minlength="20" maxlength="500"
+        placeholder="escriba su queja o peticin"></textarea>
+    </div>
+    <div>
+      <label name="imagen">Adjunto:</label>
+      <input type="file" accept=".png .jpg" multiple>
     </div>
     <button>enviar</button>
   </form>
